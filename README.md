@@ -4,4 +4,4 @@ HTML, CSS, & JavaScript
 
 
 View live:
-https://tgheadle1371.github.io/MovieAPIApp/working-movie-app-easier.html
+https://tgheadle1371.github.io/MovieAPIApp/movieApp.html
