@@ -1,6 +1,19 @@
-button,
-div,
-form,
-input {
-    margin: 10px;
+* {
+    font-family: 'Cinzel', serif;
+}
+#header {
+ border-bottom-left-radius: 1em;
+ border-bottom-right-radius: 1em;
+ }
+body {
+    font-family: 'Electrolize', sans-serif;
+}
+.card {
+    background-color: #252121;
+    color: #ffffff;
+    padding: 1em;
+}
+#footer {
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
 }

@@ -14,29 +14,29 @@ function displayMovieInfo() {
     }).then(function (response) {
         console.log(queryURL);
         // Creates a div to hold the movie
-        var movieDiv = $("<div class='movie'>");
+        var movieDiv = $('<div class="card text-center float-none m-0 m-auto" style="width: 24em; height: 50em">');
         // Retrieves the Rating Data
         var rating = response.Rated;
         // Creates an element to have the rating displayed
-        var firstPara = $("<p>").text("Rating: " + rating);
+        var firstPara = $('<p class="card-text">').text("Rating: " + rating);
         // Displays the rating
         movieDiv.append(firstPara);
         // Retrieves the release year
         var released = response.Released;
         // Creates an element to hold the release year
-        var secondPara = $("<p>").text("Released: " + released);
+        var secondPara = $('<p class="card-text">').text("Released: " + released);
         // Displays the release year
         movieDiv.append(secondPara);
         // Retrieves the plot
         var plot = response.Plot;
         // Creates an element to hold the plot
-        var thirdPara = $("<p>").text("Plot: " + plot);
+        var thirdPara = $('<p class="card-text">').text("Plot: " + plot);
         // Appends the plot
         movieDiv.append(thirdPara);
         //Retrieve URL for image
         var imgURL = response.Poster;
         // Creates an element to hold the image
-        var image = $("<img>").attr("src", imgURL);
+        var image = $('<img class="card-img-top">').attr("src", imgURL);
         // Appends the image
         movieDiv.append(image);
         // Puts the entire Movie above the previous movies.
@@ -56,7 +56,7 @@ function renderButtons() {
 
         // Then dynamicaly generates buttons for each movie in the array
         // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
-        var a = $("<button>");
+        var a = $('<button class="btn btn-default bg-dark text-white" style="letter-spacing: 5px; border: 1px solid #000000; padding: 5px; margin: 5px;">');
         // Adds a class of movie to our button
         a.addClass("movie");
         // Added a data-attribute
