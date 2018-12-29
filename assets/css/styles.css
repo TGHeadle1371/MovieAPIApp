@@ -7,6 +7,8 @@
  }
 body {
     font-family: 'Electrolize', sans-serif;
+    background-image: url('../background.jpg');
+    background-position: cover;
 }
 .card {
     background-color: #252121;

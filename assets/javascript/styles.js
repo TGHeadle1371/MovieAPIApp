@@ -14,7 +14,7 @@ function displayMovieInfo() {
     }).then(function (response) {
         console.log(queryURL);
         // Creates a div to hold the movie
-        var movieDiv = $('<div class="card text-center float-none m-0 m-auto" style="width: 24em; height: 50em">');
+        var movieDiv = $('<div class="card text-center float-none m-1 m-auto" style="width: 24em; height: 50em">');
         // Retrieves the Rating Data
         var rating = response.Rated;
         // Creates an element to have the rating displayed
